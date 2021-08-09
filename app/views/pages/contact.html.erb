@@ -1,0 +1,17 @@
+<h1>Contact</h1>
+
+<form action="/contact" method="get">
+  <input type="text" name="search" placeholder="Who are you looking for?" value="<%= params[:search] %>">
+  <input type="submit">
+</form>
+
+<ol>
+  <% @students.each do |student| %>
+    <li><%= student %></li>
+  <% end %>
+</ol>
+
+<form action="/newsletter" method="get">
+  <input type="text" name="search" placeholder="Who are you looking for?">
+  <input type="submit">
+</form>
